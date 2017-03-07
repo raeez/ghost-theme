@@ -4,7 +4,7 @@
     {{! Document Settings }}
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" media="screen" rel="stylesheet" type="text/css" />
+    <!--<link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" media="screen" rel="stylesheet" type="text/css" />-->
 
     {{! Page Meta }}
     <title>{{meta_title}}</title>
@@ -32,6 +32,16 @@
 	</script>
   </head>
 <body class="{{body_class}}">
+{{! Mathjax configuration}}
+<script type="text/javascript"     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/x-mathjax-config">  
+    MathJax.Hub.Config({  
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
+                  displayMath: [['$$','$$'], ['\[','\]']]}
+    });
+</script>  
+
 
     {{! Everything else gets inserted here }}
     {{{body}}}
@@ -45,7 +55,7 @@
       <ul id="nav" class="list-none">
         <li><a href="http://raeez.com" title="root">raeez.com</a></li>
         <li><a href="http://blog.raeez.com" title="blog">blog index</a></li>
-        <li><a href="http://blog.raeez.com/2014/01/16/genesis/" title="about">about</a></li>
+        <li><a href="http://blog.raeez.com/genesis/" title="about">about</a></li>
         <li><a href="http://photography.raeez.com/" title="photos">photos</a></li>
         <li><a href="http://vimeo.com/raeez" title="videos">videos</a></li>
         <li><a href="mailto:raeez@mit.edu" class="email" title="email">raeez@mit.edu</a></li>
