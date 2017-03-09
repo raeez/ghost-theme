@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}"/>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -32,16 +32,6 @@
 	</script>
   </head>
 <body class="{{body_class}}">
-{{! Mathjax configuration}}
-<script type="text/javascript"     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<script type="text/x-mathjax-config">  
-    MathJax.Hub.Config({  
-        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
-                  displayMath: [['$$','$$'], ['\[','\]']]}
-    });
-</script>  
-
 
     {{! Everything else gets inserted here }}
     {{{body}}}
@@ -61,6 +51,7 @@
         <li><a href="mailto:raeez@mit.edu" class="email" title="email">raeez@mit.edu</a></li>
         <!--<li><a href="http://blog.raeez.com/posts.xml" class="rss" title="Subscribe via RSS Feed">RSS</a></li>-->
         <li><a href="http://twitter.com/raeez">@raeez</a></li>
+        <li><a href="http://twitter.com/raeez">@radix26</a></li>
       </ul>
       <a href="#" class="back_up" title="Back to the top"><i></i></a>
     </div>
