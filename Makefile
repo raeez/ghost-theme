@@ -1,7 +1,9 @@
+NOW := $(shell date +"%c" | tr ' :' '__')
+
 all: custom-theme
 
 custom-theme:
-	zip -r custom-theme.zip .
+	zip -r ghost-theme-$(NOW).zip .
 
 clean:
-	rm custom-theme.zip
+	rm custom-theme*.zip
