@@ -6,4 +6,4 @@ custom-theme:
 	zip -r ghost-theme-$(NOW).zip .
 
 clean:
-	rm custom-theme*.zip
+	rm ghost-theme*.zip
