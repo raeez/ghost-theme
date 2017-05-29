@@ -1,8 +1,4 @@
-# The Shell
+# Custom Ghost Theme as deployed on http://raeez.com
 
-Theme for [Ghost](http://github.com/tryghost/ghost/).
-
-You can find live example [here](http://ghostintheshell.co/).
-
-
-
+Custom Theme for [Ghost](http://github.com/tryghost/ghost/).
+A live example: [http://photography.raeez.com](http://blog.raeez.com/).
